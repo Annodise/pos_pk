@@ -1,20 +1,18 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import {Routes , Route} from 'react-router-dom'
+
+import Home_Page from './home_page/home.jsx'
+import Page_1 from './page_1/page_1.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
-    
-      <div>
-        <h1>Phakkawee Katkaew</h1>
-        <p>6611850007</p>
-      </div>
-        
-    </>
+    <Routes>
+      <Route path='/' element={<Home_Page/>} />
+      <Route path='/page_1' element={<Page_1/>} />
+    </Routes>
   )
 }
 
