@@ -1,8 +1,8 @@
 body{
-    background-color: orange;
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background:linear-gradient(180deg , #61DAFB , black);
+    color:white;
 }
